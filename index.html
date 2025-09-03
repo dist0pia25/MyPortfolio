@@ -3,37 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>DistopiaGames</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
+
+    <nav class="nav">
+        <button class="menuBtn" id="menuBtn"></button>
+    </nav>
+
 <body class="container">
-    <header class="header" id="header">
-        <h1 class="headerName" id="headerName">René Figueroa</h1>
+    <header class="header">
+        <h1 class="headerName">René Figueroa</h1>
         <h3 class="role" id="role">Game and Web Developer</h3>
-        <p>fndjksfndkjsfnkjemlk</p>
+        <p class="description" id="description">fndjksfndkjsfnkjemlk</p>
     </header>
+    
     <main>
-        <section>
-            <h2>Experience</h2>
-            <p>I have experience in web development, including HTML, CSS, and JavaScript.</p>
+        <section class="experience-section" id="experience-section">
+            <div class="experience-item" id="experience-item">
+                <img class="software" src="Unity" alt="Unity">
+                <img class="experience-bar" alt="experience-bar">
+            </div>
+            <div class="experience-item" id="experience-item">
+                <img class="software" src="C#" alt="C#">
+                <img class="experience-bar" alt="experience-bar">
+            </div>
+            <div class="experience-item" id="experience-item">
+                <img class="software" src="JavaScript" alt="JavaScript">
+                <img class="experience-bar" alt="experience-bar">
+            </div>
+            <div class="experience-item" id="experience-item">
+                <img class="software" src="HTML" alt="HTML">
+                <img class="experience-bar" alt="experience-bar">
+            </div>
         </section>
 
-        <section>
+        <section class="about-me" id="about-me">
             <h2>About Me</h2>
             <p>This is a brief introduction about myself.</p>
         </section>
-
-        <section>
-            <h2>My Projects</h2>
-            <ul>
-                <li>Project 1: Description of project 1.</li>
-                <li>Project 2: Description of project 2.</li>
-                <li>Project 3: Description of project 3.</li>
-            </ul>
-        </section>
-
     </main>
+    
+    <aside class="menu" id="menu">
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#experience-section">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </aside>
+
     <footer>
         <p>&copy; 2025 All rights reserved</p>
     </footer>

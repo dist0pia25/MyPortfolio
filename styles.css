@@ -1,6 +1,27 @@
 :root
 {
     --backgroundColor: linear-gradient(to top, #EFFFFD, #85F4FF); /* Define a gradient background color */
+    --experienceBarColor: #85F4FF; /* Define a color for the experience bar */
+}
+
+.nav
+{
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align items to the right */
+}
+
+.menuBtn
+{
+    margin: 1vh 1vw; /* Margin around the button */
+    padding: 0.5em 1em; /* Padding inside the button */
+    font-size: 1em; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 100%; /* Rounded corners */
+}
+
+.menuBtn:hover
+{
+    background-color: rgba(255, 255, 255, 0.8); /* Change background on hover */
 }
 
 .container
@@ -8,7 +29,6 @@
     background: var(--backgroundColor); /* Use the defined background color */
     font-family: Arial, sans-serif; /* Set a default font */
     margin: 0; /* Remove default margin */
-    padding: 20px; /* Add some padding */
     height: 100%; /* Full height */
     width: 100%; /* Full width */
 }
@@ -17,11 +37,62 @@
 {
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack items vertically */
+    margin-left: 5vw; /* Margin around the header */
+    margin-top: 10vh;
 }
 
 .headerName
 {
-    font-size: 2em; /* Larger font size for the name */
+    font-size: 4em; /* Larger font size for the name */
     font-weight: bold; /* Bold text */
     margin-bottom: 0.2em; /* Space below the name */
+}
+
+.experience-section
+{
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Center items horizontally */
+    margin-top: 2em; /* Space above the section */
+    margin-left: 5vw; /* Margin around the section */
+}
+
+.experience-item
+{
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 10vh;
+    width: 10em;
+}
+
+.about-me 
+{
+    font-size: 1.5em; /* Font size for the about me section */
+    margin-top: 10vh; /* Remove top margin */
+    margin-left: 15vw; /* Margin around the section */
+}
+
+.menu
+{
+    position: fixed; /* Fix the menu position */
+    top: 0; /* Align to the top */
+    right: -20vw; /* Align to the right */
+    height: 100%; /* Full height */
+    width: 15vw; /* Set a width */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    padding: 2em; /* Padding inside the menu */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    justify-content: flex-start; /* Align items to the top */
+    transition: right 0.3s ease; /* Smooth transition for sliding effect */
+}
+
+.menu:active
+{
+    right: 0; /* Show the menu */
 }
