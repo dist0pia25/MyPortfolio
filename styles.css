@@ -1,0 +1,27 @@
+:root
+{
+    --backgroundColor: linear-gradient(to top, #EFFFFD, #85F4FF); /* Define a gradient background color */
+}
+
+.container
+{
+    background: var(--backgroundColor); /* Use the defined background color */
+    font-family: Arial, sans-serif; /* Set a default font */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add some padding */
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+}
+
+.header
+{
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.headerName
+{
+    font-size: 2em; /* Larger font size for the name */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 0.2em; /* Space below the name */
+}
