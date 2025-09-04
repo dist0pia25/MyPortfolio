@@ -16,7 +16,10 @@
     padding: 0.5em 1em; /* Padding inside the button */
     font-size: 1em; /* Font size */
     cursor: pointer; /* Pointer cursor on hover */
-    border-radius: 100%; /* Rounded corners */
+    border-radius: 50%; /* Rounded corners */
+    height: 2em; /* Set a height */
+    width: 2em; /* Set a width */
+    scale: 1.3; /* Default scale */;
 }
 
 .menuBtn:hover
@@ -24,12 +27,19 @@
     background-color: rgba(255, 255, 255, 0.8); /* Change background on hover */
 }
 
+.menuBtn:active 
+{
+    justify-content: flex-start; /* Align items to the top */
+    scale: 1.1; /* Slightly reduce scale on click */
+    background-color: rgba(255, 255, 255, 0.6); /* Change background on click */
+}
+
 .container
 {
     background: var(--backgroundColor); /* Use the defined background color */
     font-family: Arial, sans-serif; /* Set a default font */
     margin: 0; /* Remove default margin */
-    height: 100%; /* Full height */
+    height: auto; /* Full height */
     width: 100%; /* Full width */
 }
 
@@ -75,7 +85,7 @@
     margin-left: 15vw; /* Margin around the section */
 }
 
-.menu
+#sideMenu
 {
     position: fixed; /* Fix the menu position */
     top: 0; /* Align to the top */
@@ -92,7 +102,7 @@
     transition: right 0.3s ease; /* Smooth transition for sliding effect */
 }
 
-.menu:active
+#sideMenu:active
 {
-    right: 0; /* Show the menu */
+    right: 0vw; /* Show the menu */
 }
